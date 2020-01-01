@@ -2,19 +2,14 @@
 
 ### Regression Problem
 
-
 #### Identify/predict/recommend the price for given set of items
-
 *input* :
-
 	x1-15
-
 *output (target)* :
-
 	y_var
 	
 ## Data science Steps:
-	- Clean 
+	- Data Clean 
 	- Visualize the data
 		- Ask Questions
 	- Feature Selection based on visualization and try brute force also
@@ -65,9 +60,34 @@
 ## Attach Rest API 
 	-Docker Deployment scripts
 
+## Data cleaning :
+	There is no missing value in the given dataset
 
-Try to prepare a Dashboard (Addons)
-	
+## Exploring the Dataset
+-	Visualizing all the columns at once
+	To find how they are correlated with each other and with target (price) variable
+![all_columns](IMG\all_columns.png)
+
+- Visualizing Target variable only `y_var`
+![target](IMG\target_view.png)
+
+- Visualizing only continous Columns
+
+![cont_columns](IMG\only_cont.png)
+
+- Visualizing only catagorical columns (value counts):
+![cat_columns](IMG\cat_columns.png)
+
+- Visualizing Correlation between all the columns
+![corr_all](IMG\complete_corr.png)
+
+- Visualizing Correlation for single column
+![single_corr](IMG\y_var_corr.png)
+
+
+- Out of curiosity found that majority of the target variable (price) found to be a zero so visualizing the dataFrame which results in zero price
+
+![zero_df_vis](IMG\zero_df_vis.png)
 
 ## Modeling 
 - What are the Common price amount always happening for the given list of variables(x-var)? 
@@ -95,7 +115,7 @@ Try to prepare a Dashboard (Addons)
     - Lime
 
 ## Feature Selection	
-![kk](F:\job\poshmark\IMG\model_feat_imp.png)
+![kk](IMG\model_feat_imp.png)
 
 Feature imporatance of all baseline models
 
@@ -129,6 +149,7 @@ Feature imporatance of all baseline models
 	
 -	Among all the models catboost Regressor performed well on the test dataset
 
+![baseline_benchmark](IMG\baseline_benchmark.JPG)
 
 	
 	 

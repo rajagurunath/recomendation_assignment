@@ -267,6 +267,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-cleaning" title="Data cleaning :" class="md-nav__link">
+    Data cleaning :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-the-dataset" title="Exploring the Dataset" class="md-nav__link">
+    Exploring the Dataset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modeling" title="Modeling" class="md-nav__link">
     Modeling
   </a>
@@ -398,6 +412,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-cleaning" title="Data cleaning :" class="md-nav__link">
+    Data cleaning :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-the-dataset" title="Exploring the Dataset" class="md-nav__link">
+    Exploring the Dataset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modeling" title="Modeling" class="md-nav__link">
     Modeling
   </a>
@@ -446,14 +474,12 @@
                 <h2 id="poshmark-assignment">POSHMARK -Assignment</h2>
 <h3 id="regression-problem">Regression Problem</h3>
 <h4 id="identifypredictrecommend-the-price-for-given-set-of-items">Identify/predict/recommend the price for given set of items</h4>
-<p><em>input</em> :</p>
-<pre><code>x1-15
-</code></pre>
-<p><em>output (target)</em> :</p>
-<pre><code>y_var
-</code></pre>
+<p><em>input</em> :
+    x1-15
+<em>output (target)</em> :
+    y_var</p>
 <h2 id="data-science-steps">Data science Steps:</h2>
-<pre><code>- Clean 
+<pre><code>- Data Clean 
 - Visualize the data
     - Ask Questions
 - Feature Selection based on visualization and try brute force also
@@ -502,7 +528,43 @@ or android app or website.
 <h2 id="attach-rest-api">Attach Rest API</h2>
 <pre><code>-Docker Deployment scripts
 </code></pre>
-<p>Try to prepare a Dashboard (Addons)</p>
+<h2 id="data-cleaning">Data cleaning :</h2>
+<pre><code>There is no missing value in the given dataset
+</code></pre>
+<h2 id="exploring-the-dataset">Exploring the Dataset</h2>
+<ul>
+<li>
+<p>Visualizing all the columns at once
+    To find how they are correlated with each other and with target (price) variable
+<img alt="all_columns" src="IMG\all_columns.png" /></p>
+</li>
+<li>
+<p>Visualizing Target variable only <code>y_var</code>
+<img alt="target" src="IMG\target_view.png" /></p>
+</li>
+<li>
+<p>Visualizing only continous Columns</p>
+</li>
+</ul>
+<p><img alt="cont_columns" src="IMG\only_cont.png" /></p>
+<ul>
+<li>
+<p>Visualizing only catagorical columns (value counts):
+<img alt="cat_columns" src="IMG\cat_columns.png" /></p>
+</li>
+<li>
+<p>Visualizing Correlation between all the columns
+<img alt="corr_all" src="IMG\complete_corr.png" /></p>
+</li>
+<li>
+<p>Visualizing Correlation for single column
+<img alt="single_corr" src="IMG\y_var_corr.png" /></p>
+</li>
+<li>
+<p>Out of curiosity found that majority of the target variable (price) found to be a zero so visualizing the dataFrame which results in zero price</p>
+</li>
+</ul>
+<p><img alt="zero_df_vis" src="IMG\zero_df_vis.png" /></p>
 <h2 id="modeling">Modeling</h2>
 <ul>
 <li>What are the Common price amount always happening for the given list of variables(x-var)? <ul>
@@ -545,7 +607,7 @@ or android app or website.
 </li>
 </ul>
 <h2 id="feature-selection">Feature Selection</h2>
-<p><img alt="kk" src="F:\job\poshmark\IMG\model_feat_imp.png" /></p>
+<p><img alt="kk" src="IMG\model_feat_imp.png" /></p>
 <p>Feature imporatance of all baseline models</p>
 <table>
 <thead>
@@ -773,6 +835,7 @@ or android app or website.
 <ul>
 <li>Among all the models catboost Regressor performed well on the test dataset</li>
 </ul>
+<p><img alt="baseline_benchmark" src="IMG\baseline_benchmark.JPG" /></p>
                 
                   
                 
@@ -813,12 +876,7 @@ or android app or website.
       
       <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
       
-    <script src="jquery.js"></script> 
-    <script> 
-		$(function(){
-		  $("#includedContent").load("listing_price_suggest_profile.html"); 
-		});
-    </script> 
+    
     
       
     
