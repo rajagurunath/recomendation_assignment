@@ -1,5 +1,5 @@
 ## Feature Selection	
-![kk](IMG\model_feat_imp.png)
+![kk](..\IMG\model_feat_imp.png)
 
 Feature imporatance of all baseline models
 
@@ -33,5 +33,5 @@ Feature imporatance of all baseline models
 	
 -	Among all the models catboost Regressor performed well on the test dataset
 
-![baseline_benchmark](IMG\baseline_benchmark.JPG)
+![baseline_benchmark](..\IMG\baseline_benchmark.JPG)
 
