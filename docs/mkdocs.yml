@@ -1,4 +1,9 @@
 site_name: Poshmark -Assingment 
 
+nav :
+  - Home: 'index.md'
+  - Exploratory data Analysis: 'eda.md'
+  - Modeling: 'modeling.md'
+  - Feature Selection: 'feat_sel.md'
 theme:
   name: 'material'

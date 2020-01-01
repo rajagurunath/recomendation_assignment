@@ -1,0 +1,24 @@
+## Modeling 
+- What are the Common price amount always happening for the given list of variables(x-var)? 
+    - This is useful to get a intiution 
+    - This can be used in final stage of modeling (we can tweak the model output , to get desired output at the last)
+- Feature Selection using trained models
+- Build Different Algorithms to predict the price
+    - Linear, Lasso,Ridge
+    - Xgboost,Catboost,LightGBM
+    - Pytorch model (if needed)
+	- Baseline model performance metrics
+- Measure the model performance using 
+    - Mean Absolute Error
+    - Mean Squared Error
+    - RMSE
+- Benchmark Leaderboard of models using Different Hyperparameters
+    - For above metrics(Error function in the test set)
+    - Also for Prediction Time
+	
+- Confidence Interval Calculation 
+    - Random Forest Confidence Intervals (using different Decision Trees)
+    - Gradient Boosting using Quantile Intervals
+- Explanation for the prediction
+    - Shap
+    - Lime
