@@ -22,3 +22,44 @@
 - Explanation for the prediction
     - Shap
     - Lime
+
+## Developing Baseline Model
+
+### we trained 7 Models with no hyperparameter tuning as our first baseline:
+- Linear Regression
+- Lasso Regression
+- Ridge Regression
+- RandomForest Regression
+- GradientBoosting Regression (GBR)
+- CatBoost GBR
+- lightGBM GBR
+
+
+### Baseline Score of the trained models
+
+ |      |   linear_reg |      lasso |      ridge |         rf |        gbr |    cat_gbr |   light_gbr |
+|:-----|-------------:|-----------:|-----------:|-----------:|-----------:|-----------:|------------:|
+| maae |      23.9081 |    24.9784 |    23.9086 |    22.1    |    23.3951 |    22.6081 |     22.4571 |
+| mae  |      52.7526 |    52.9087 |    52.7526 |    55.2584 |    49.892  |    49.4214 |     49.6741 |
+| mse  |   21382.3    | 21457.7    | 21382.4    | 23178.5    | 20087.1    | 19066.8    |  19289.1    |
+| rmse |     146.227  |   146.484  |   146.227  |   152.245  |   141.729  |   138.083  |    138.885  |
+	
+-	Among all the models catboost Regressor performed well on the test dataset
+
+![baseline_benchmark](..\IMG\baseline_benchmark.JPG)
+
+
+### As we took Catboost model for best prediction accuracy and low-latency predictions and started tuning the hyperparamater of the models
+
+`The Training notebook of the catboost model was attached as html in the following link`
+
+--
+
+
+
+
+
+
+
+
+

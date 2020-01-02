@@ -7,5 +7,6 @@ nav :
   - Feature Selection: 'feat_sel.md'
   - Deployment: 'deployment.md'
   - Hyperameter_tuning: 'hyperameter_tuning.md'
+  - Explanation: 'explanation.md'
 theme:
   name: 'material'

@@ -222,6 +222,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#developing-baseline-model" title="Developing Baseline Model" class="md-nav__link">
+    Developing Baseline Model
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#we-trained-7-models-with-no-hyperparameter-tuning-as-our-first-baseline" title="we trained 7 Models with no hyperparameter tuning as our first baseline:" class="md-nav__link">
+    we trained 7 Models with no hyperparameter tuning as our first baseline:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-score-of-the-trained-models" title="Baseline Score of the trained models" class="md-nav__link">
+    Baseline Score of the trained models
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-we-took-catboost-model-for-best-prediction-accuracy-and-low-latency-predictions-and-started-tuning-the-hyperparamater-of-the-models" title="As we took Catboost model for best prediction accuracy and low-latency predictions and started tuning the hyperparamater of the models" class="md-nav__link">
+    As we took Catboost model for best prediction accuracy and low-latency predictions and started tuning the hyperparamater of the models
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -241,6 +275,42 @@
   <li class="md-nav__item">
     <a href="../feat_sel/" title="Feature Selection" class="md-nav__link">
       Feature Selection
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../deployment/" title="Deployment" class="md-nav__link">
+      Deployment
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../hyperameter_tuning/" title="Hyperameter_tuning" class="md-nav__link">
+      Hyperameter_tuning
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../explanation/" title="Explanation" class="md-nav__link">
+      Explanation
     </a>
   </li>
 
@@ -267,6 +337,40 @@
   <a href="#modeling" title="Modeling" class="md-nav__link">
     Modeling
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developing-baseline-model" title="Developing Baseline Model" class="md-nav__link">
+    Developing Baseline Model
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#we-trained-7-models-with-no-hyperparameter-tuning-as-our-first-baseline" title="we trained 7 Models with no hyperparameter tuning as our first baseline:" class="md-nav__link">
+    we trained 7 Models with no hyperparameter tuning as our first baseline:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-score-of-the-trained-models" title="Baseline Score of the trained models" class="md-nav__link">
+    Baseline Score of the trained models
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-we-took-catboost-model-for-best-prediction-accuracy-and-low-latency-predictions-and-started-tuning-the-hyperparamater-of-the-models" title="As we took Catboost model for best prediction accuracy and low-latency predictions and started tuning the hyperparamater of the models" class="md-nav__link">
+    As we took Catboost model for best prediction accuracy and low-latency predictions and started tuning the hyperparamater of the models
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -330,6 +434,84 @@
 </ul>
 </li>
 </ul>
+<h2 id="developing-baseline-model">Developing Baseline Model</h2>
+<h3 id="we-trained-7-models-with-no-hyperparameter-tuning-as-our-first-baseline">we trained 7 Models with no hyperparameter tuning as our first baseline:</h3>
+<ul>
+<li>Linear Regression</li>
+<li>Lasso Regression</li>
+<li>Ridge Regression</li>
+<li>RandomForest Regression</li>
+<li>GradientBoosting Regression (GBR)</li>
+<li>CatBoost GBR</li>
+<li>lightGBM GBR</li>
+</ul>
+<h3 id="baseline-score-of-the-trained-models">Baseline Score of the trained models</h3>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="right">linear_reg</th>
+<th align="right">lasso</th>
+<th align="right">ridge</th>
+<th align="right">rf</th>
+<th align="right">gbr</th>
+<th align="right">cat_gbr</th>
+<th align="right">light_gbr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">maae</td>
+<td align="right">23.9081</td>
+<td align="right">24.9784</td>
+<td align="right">23.9086</td>
+<td align="right">22.1</td>
+<td align="right">23.3951</td>
+<td align="right">22.6081</td>
+<td align="right">22.4571</td>
+</tr>
+<tr>
+<td align="left">mae</td>
+<td align="right">52.7526</td>
+<td align="right">52.9087</td>
+<td align="right">52.7526</td>
+<td align="right">55.2584</td>
+<td align="right">49.892</td>
+<td align="right">49.4214</td>
+<td align="right">49.6741</td>
+</tr>
+<tr>
+<td align="left">mse</td>
+<td align="right">21382.3</td>
+<td align="right">21457.7</td>
+<td align="right">21382.4</td>
+<td align="right">23178.5</td>
+<td align="right">20087.1</td>
+<td align="right">19066.8</td>
+<td align="right">19289.1</td>
+</tr>
+<tr>
+<td align="left">rmse</td>
+<td align="right">146.227</td>
+<td align="right">146.484</td>
+<td align="right">146.227</td>
+<td align="right">152.245</td>
+<td align="right">141.729</td>
+<td align="right">138.083</td>
+<td align="right">138.885</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Among all the models catboost Regressor performed well on the test dataset</li>
+</ul>
+<p><img alt="baseline_benchmark" src="..\IMG\baseline_benchmark.JPG" /></p>
+<h3 id="as-we-took-catboost-model-for-best-prediction-accuracy-and-low-latency-predictions-and-started-tuning-the-hyperparamater-of-the-models">As we took Catboost model for best prediction accuracy and low-latency predictions and started tuning the hyperparamater of the models</h3>
+<p><code>The Training notebook of the catboost model was attached as html in the following link</code></p>
+<li><a href="modeling_v0.2.html">Modeling Catboost notebook </a></li>
+
+
+
                 
                   
                 

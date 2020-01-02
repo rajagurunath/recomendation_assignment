@@ -22,16 +22,3 @@ Feature imporatance of all baseline models
 | 14 |   0.00161799  |   0.00375283  |   0.00161861  | 0.0483828  | 0.0253482   |  3.8528   |         207 |
 	
 
-### Baseline Score of the trained models
-
- |      |   linear_reg |      lasso |      ridge |         rf |        gbr |    cat_gbr |   light_gbr |
-|:-----|-------------:|-----------:|-----------:|-----------:|-----------:|-----------:|------------:|
-| maae |      23.9081 |    24.9784 |    23.9086 |    22.1    |    23.3951 |    22.6081 |     22.4571 |
-| mae  |      52.7526 |    52.9087 |    52.7526 |    55.2584 |    49.892  |    49.4214 |     49.6741 |
-| mse  |   21382.3    | 21457.7    | 21382.4    | 23178.5    | 20087.1    | 19066.8    |  19289.1    |
-| rmse |     146.227  |   146.484  |   146.227  |   152.245  |   141.729  |   138.083  |    138.885  |
-	
--	Among all the models catboost Regressor performed well on the test dataset
-
-![baseline_benchmark](..\IMG\baseline_benchmark.JPG)
-
