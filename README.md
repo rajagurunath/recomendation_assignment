@@ -51,7 +51,11 @@
 	- Analytics as to be done
 	- Feedback based training
 	- Batch analytics
-	
+
+## Deployment Architecture
+
+![Deployment_Architecture](IMG\deployment_arch.JPG)
+
 ## Explanation:
   ### Give explanation for your prediction if needed
   - lime
