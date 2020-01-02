@@ -1,6 +1,6 @@
 """
 FastAPI app to serve prediction -async
-
+ TO start this service : uvicorn main:app --reload
 Ref:
     - https://grega.xyz/2019/07/fastapi-and-celery/
     - https://fastapi.tiangolo.com/project-generation
