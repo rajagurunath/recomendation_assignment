@@ -5,5 +5,7 @@ nav :
   - Exploratory data Analysis: 'eda.md'
   - Modeling: 'modeling.md'
   - Feature Selection: 'feat_sel.md'
+  - Deployment: 'deployment.md'
+  - Hyperameter_tuning: 'hyperameter_tuning.md'
 theme:
   name: 'material'
