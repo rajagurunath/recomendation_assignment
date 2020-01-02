@@ -1,4 +1,4 @@
-## POSHMARK -Assignment
+## Assignment
 
 ### Regression Problem
 
