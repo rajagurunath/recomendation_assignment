@@ -54,7 +54,7 @@
 
 ## Deployment Architecture
 
-![Deployment_Architecture](IMG\deployment_arch.JPG)
+![Deployment_Architecture](IMG/deployment_arch.JPG)
 
 ## Explanation:
   ### Give explanation for your prediction if needed
